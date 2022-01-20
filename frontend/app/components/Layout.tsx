@@ -19,13 +19,13 @@ const navigation = [
   { name: 'Documents', href: '#', icon: InboxIcon, current: false },
   { name: 'Reports', href: '#', icon: ChartBarIcon, current: false },
 ]
-
-interface Props {
-  children: JSX.Element | JSX.Element[]
-}
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(' ')
 }
+interface Props {
+  children: JSX.Element | JSX.Element[]
+}
+
 export const Layout: FC<Props> = ({ children }) => {
   const [sidebarOpen, setSidebarOpen] = useState(false)
   return (
