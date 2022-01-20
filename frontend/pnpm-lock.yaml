@@ -7,6 +7,7 @@ specifiers:
   '@remix-run/react': ^1.1.1
   '@remix-run/serve': ^1.1.1
   '@tailwindcss/forms': ^0.4.0
+  '@tailwindcss/typography': ^0.5.0
   '@types/react': ^17.0.24
   '@types/react-dom': ^17.0.9
   concurrently: ^7.0.0
@@ -29,6 +30,7 @@ dependencies:
 devDependencies:
   '@remix-run/dev': 1.1.1
   '@tailwindcss/forms': 0.4.0_tailwindcss@3.0.15
+  '@tailwindcss/typography': 0.5.0_tailwindcss@3.0.15
   '@types/react': 17.0.38
   '@types/react-dom': 17.0.11
   concurrently: 7.0.0
@@ -251,6 +253,18 @@ packages:
       tailwindcss: '>=3.0.0 || >= 3.0.0-alpha.1'
     dependencies:
       mini-svg-data-uri: 1.4.3
+      tailwindcss: 3.0.15_postcss@8.4.5
+    dev: true
+
+  /@tailwindcss/typography/0.5.0_tailwindcss@3.0.15:
+    resolution: {integrity: sha512-1p/3C6C+JJziS/ghtG8ACYalbA2SyLJY27Pm33cVTlAoY6VQ7zfm2H64cPxUMBkVIlWXTtWHhZcZJPobMRmQAA==}
+    peerDependencies:
+      tailwindcss: '>=3.0.0 || >= 3.0.0-alpha.1 || insiders'
+    dependencies:
+      lodash.castarray: 4.4.0
+      lodash.isplainobject: 4.0.6
+      lodash.merge: 4.6.2
+      lodash.uniq: 4.5.0
       tailwindcss: 3.0.15_postcss@8.4.5
     dev: true
 
@@ -1948,8 +1962,24 @@ packages:
       p-locate: 4.1.0
     dev: true
 
+  /lodash.castarray/4.4.0:
+    resolution: {integrity: sha1-wCUTUV4wna3dTCTGDP3c9ZdtkRU=}
+    dev: true
+
   /lodash.debounce/4.0.8:
     resolution: {integrity: sha1-gteb/zCmfEAF/9XiUVMArZyk168=}
+    dev: true
+
+  /lodash.isplainobject/4.0.6:
+    resolution: {integrity: sha1-fFJqUtibRcRcxpC4gWO+BJf1UMs=}
+    dev: true
+
+  /lodash.merge/4.6.2:
+    resolution: {integrity: sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==}
+    dev: true
+
+  /lodash.uniq/4.5.0:
+    resolution: {integrity: sha1-0CJTc662Uq3BvILklFM5qEJ1R3M=}
     dev: true
 
   /lodash/4.17.21:
